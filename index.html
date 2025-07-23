@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Trang Nhấp Nháy Đủ Màu</title>
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 3rem;
+      color: white;
+      font-family: Arial, sans-serif;
+      transition: background-color 0.3s;
+    }
+  </style>
+</head>
+<body>
+  🎨 quan den
+  <script>
+    // Danh sách màu
+    const colors = ["red", "orange", "yellow", "green", "blue", "indigo", "violet", "pink", "cyan"];
+    let i = 0;
+
+    setInterval(() => {
+      document.body.style.backgroundColor = colors[i];
+      i = (i + 1) % colors.length;
+    }, 500); // đổi màu mỗi 0.5 giây
+  </script>
+</body>
+</html>
